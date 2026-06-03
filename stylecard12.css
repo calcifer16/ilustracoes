@@ -1,6 +1,6 @@
 @font-face {
     font-family: magic;
-    src: url(fonte/Chaos-Aura.otf) format('opentype');
+     src: url(fonte/Rustic\ Delight.ttf) format('opentype');
     
 }
 
@@ -205,5 +205,5 @@ main{
     }
 }
 .volt{
-    animation: volt 3s, forwards;
+    animation: volt 2.7s, forwards;
 }

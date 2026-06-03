@@ -1,6 +1,6 @@
 @font-face {
     font-family: magic;
-    src: url(fonte/Chaos-Aura.otf) format('opentype');
+    src: url(fonte/Rustic\ Delight.ttf) format('opentype');
     
 }
 
@@ -265,6 +265,6 @@ nav a:hover{
     }
 }
 .saindo{
-    animation: saindo 2.5s forwards;
+    animation: saindo 1s forwards;
 }
 
