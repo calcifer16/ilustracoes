@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylecard2.css">
+</head>
+<body>
+       <main>
+        <table>
+            <td class="card"><img src="imagens/imagem2.jpeg" alt=""></td>
+            <div class="texto">Além do Mar, a manhã é pálida e o passado deve morrer.
+            Você vai abraçar as sombras mais uma vez.</div>
+        </table>
+        <footer>
+            <img id="botao" src="imagens/botao-de-seta.png" onclick="voltar()" alt="">
+        </footer>
+        </main>
+        <section>
+                <div class="falling-folhas">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                    <img src="imagens/folhas.png" alt="">
+                </div>
+        </section>
+       <script>
+        function voltar(){
+            document.body.classList.add('volt');
+            setTimeout(()=>{
+                window.location.href='site.html';
+            },2500);
+        }
+       </script>
+</body>
+</html>

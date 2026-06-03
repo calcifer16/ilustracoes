@@ -1,0 +1,270 @@
+@font-face {
+    font-family: magic;
+    src: url(fonte/Chaos-Aura.otf) format('opentype');
+    
+}
+
+body{
+    background-color: beige;
+}
+
+section > h1{
+    padding-top: 10px;
+    font-family: magic, sans-serif;
+    font-size: 3em;
+    
+}
+
+section > nav{
+    text-align: left;
+    padding-left: 10px;
+    font-family: magic, sans-serif;;
+    margin: auto;
+    
+}
+
+.topo{
+    color: #fff8dc;
+    text-align: center;
+    background: linear-gradient(
+        -45deg,
+        #f79205,
+        #f75205,
+        #ffcc00,
+        #ff6a00,
+        #f79205,
+        #f75205,
+        #ffcc00
+    );
+    background-size: 400% 400%;
+    animation: gradiente 12s ease infinite;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: -12.5px;
+    
+}
+.corpo{
+    width: 100%;
+    max-width: 1500px;
+    padding: 0.5px;
+    background-color: #fffaf0;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px ;
+    margin: auto;
+    min-height: 100vh;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+
+.galeria{
+    columns: 250px;
+    column-gap: 30px;
+    padding: 0.5px;
+    margin:  auto;
+    max-width: 1000px; 
+    position: relative;
+    z-index: 2;
+}
+
+.card{
+    background-color: white;
+    break-inside: avoid;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 4px 16px 16px rgba(0,0,0,0.1);
+    
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    height: auto;
+    opacity: 0;
+    animation: surgir 3s forwards;
+}
+
+.insta{
+    height: 23px;
+    width: 23px;
+    font-family: magic;
+    margin-bottom: -5px;
+    margin-right: -5px;
+}
+
+nav a {
+    color: #fff8dc;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 1s;
+    
+}
+nav a:hover{
+    background-color: #ffcc00;
+    color: rgb(5, 8, 8);
+    border-radius: 4px;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    transition: 0.3s;
+}
+
+@media (max-width:768px){
+    .galeria{
+        columns: 2;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .galeria{
+        columns: 2.;
+    }
+
+}
+
+@keyframes surgir {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradiente{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+
+.falling-folhas{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+}
+
+.falling-folhas img{
+    position: absolute;
+    width: 40px;
+    animation: cair 10s linear infinite;
+}
+
+.falling-folhas img:nth-child(1){
+    left: 5%;
+    top:  -50px;
+    animation-delay: -1s;
+}
+.falling-folhas img:nth-child(2){
+    left: 15%;
+    top:  -350px;
+    animation-delay: -4s;
+}
+.falling-folhas img:nth-child(3){
+    left: 28%;
+    top:  -350px;
+    animation-delay: -7s;
+}
+.falling-folhas img:nth-child(4){
+    left: 40%;
+    top:  -700px;
+    animation-delay: -2s;
+}
+.falling-folhas img:nth-child(5){
+    left: 52%;
+    top: -250px;
+    animation-delay: -6s;
+}
+.falling-folhas img:nth-child(6){
+    left: 63%;
+    top:  -900px;
+    animation-delay: -9s;
+}
+.falling-folhas img:nth-child(7){
+    left: 72%;
+    top:  -500px;
+    animation-delay: -10s;
+}
+.falling-folhas img:nth-child(8){
+    left: 80%;
+    top:  -1200px;
+    animation-delay: -12s;
+}
+.falling-folhas img:nth-child(9){
+    left: 88%;
+    top:  -100px;
+    animation-delay: -14s;
+}
+.falling-folhas img:nth-child(10){
+    left: 94%;
+    top:  -100px;
+    animation-delay: -15s;
+}
+.falling-folhas img:nth-child(11){
+    left: 98%;
+    top:  -800px;
+    animation-delay: -18s;
+}
+.falling-folhas img:nth-child(12){
+    left: 100%;
+    top:  -310px;
+    animation-delay: -21s;
+}
+.falling-folhas img:nth-child(13){
+    left: 65%;
+    top:  -700px;
+    animation-delay: -24s;
+}
+.falling-folhas img:nth-child(14){
+    left: 97%;
+    top:  -570px;
+    animation-delay: -28s;
+}
+
+@keyframes cair{
+    0%{
+        transform: translate(0,-100px);
+    }
+    50%{
+        transform: translate(30px, 50vh);
+    }
+    100%{
+        transform: translate(-30px, 110vh);
+    }
+}
+
+@keyframes saindo{
+    from{
+        opacity: 1;
+        transform: translatey(0);
+    }
+    to{
+        opacity: 0;
+        transform: translatey(-100px);
+    }
+}
+.saindo{
+    animation: saindo 2.5s forwards;
+}
+
